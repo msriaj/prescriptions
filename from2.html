@@ -1,106 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css"
+    />
     <style>
-        body {
-            background-color: azure;
-        }
+      body {
+        background-color: azure;
+      }
 
-        h1 h2 h3 h4 h5 h6 p a span {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
+      .page {
+        width: 148mm;
+        min-height: 210mm;
+        margin: 0 auto;
+        border: 1px #d3d3d3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
 
-        .page {
-            width: 148mm;
-            min-height: 210mm;
-            margin: 0 auto;
-            border: 1px #d3d3d3 solid;
-            border-radius: 5px;
-            background: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        @page {
-            size: A5;
-            margin: 0;
-        }
+      @page {
+        size: A5;
+        margin: 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="page px-3 py-2">
-        <!-- Heading Section Start -->
-        <div class="row">
-            <p class="col-3 mb-0 text-primary">UHID: <span class="fw-bold">1099</span></p>
-            <h2 class="col-5 fs-4 fw-bold text-center text-success border-2 border-bottom">ADMISSION FORM</h2>
-            <div class="col-4 mb-0 text-end">
-                <img src="assets/barcode.png" alt="" class="img-fluid">
+  <body>
+    <div class="page py-2 d-flex flex-column justify-content-between">
+      <div>
+        <div>
+          <div class="row mb-3 bg-light py-1">
+            <div class="col-1">
+              <img
+                style="height: 60px"
+                src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png"
+                alt=""
+              />
             </div>
+            <div class="col-1"></div>
+            <div class="col-8 text-center pr-4">
+              <h3 class="p-0 m-0 text-info"><b>QB DEMO HOSPITAL</b></h3>
+
+              <p class="p-0 m-0">
+                <small class="border-bottom border-top bg-white border-info">
+                  <span class="text-gray">
+                    Phone: <i class="text-info">+880 1798691956</i>, Email:
+                    <i class="text-info">abcedfg@gmail.com</i>
+                  </span></small
+                >
+              </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+          </div>
+
+          <!-- Heading Section Start -->
+          <div class="row px-4 justify-content-between">
+            <p class="col-3 mb-0 text-primary">
+              <b>UHID:</b>
+              <span class="bg-dark px-2 py-1 rounded-pill">1099</span>
+            </p>
+            <p class="col-6 text-center p-0 text-success">
+              <span class="border px-3 py-1 bg-light rounded-pill">
+                <b>ADMISSION FORM</b></span
+              >
+            </p>
+            <div class="col-3 mb-0 text-right">
+              <img src="assets/barcode.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <!-- ||Heading Section right|| -->
+
+          <!-- Form Section Start -->
+          <section class="px-4">
+            <div class="row border border-dark py-1">
+              <p class="m-0 col-6 text-capitalize">
+                <small
+                  >Name: <span class="text-gray"><b>Ibrahim</b></span></small
+                >
+              </p>
+              <p class="m-0 col-6 text-capitalize">
+                <small
+                  >Admission:
+                  <span class="text-gray"
+                    ><b>01-12-2022 04:11PM</b></span
+                  ></small
+                >
+              </p>
+            </div>
+            <div class="row border border-dark border-top-0 py-1">
+              <p class="mb-0 col-6 text-capitalize">
+                <small
+                  >Age/Sex: <span class="text-gray"><b>25 Y/M</b></span></small
+                >
+              </p>
+              <p class="mb-0 col-6 text-capitalize">
+                <small
+                  >Discharged data: <span class="text-gray"><b>00</b></span>
+                </small>
+              </p>
+            </div>
+            <div class="row border border-dark border-top-0 py-1">
+              <p class="mb-0 col-6 text-capitalize">
+                <small
+                  >patient's cell:
+                  <span class="text-gray"><b>01844-004914</b></span></small
+                >
+              </p>
+              <p class="mb-0 col-6 text-capitalize">
+                <small
+                  >Profession:
+                  <span class="text-gray"><b>service (govt)</b></span>
+                </small>
+              </p>
+            </div>
+            <div class="row border border-dark border-top-0 py-1">
+              <p class="mb-0 col-12 text-capitalize">
+                <small
+                  >Address:
+                  <b>
+                    <span class="text-gray">
+                      ward no-39, haydarabad,pubail, gazipur sadar, joydebpur,
+                      gazipur.</span
+                    ></b
+                  >
+                </small>
+              </p>
+            </div>
+            <div class="row border border-dark border-top-0 py-1">
+              <p class="mb-0 col-6 text-capitalize">
+                <small
+                  >bad/cabin:
+                  <span class="text-danger"><b>cabin 404</b></span></small
+                >
+              </p>
+              <p class="mb-0 col-6 text-capitalize">
+                <small
+                  >case/ disease:
+                  <span class="text-gray"><b>Apprighticitis</b></span>
+                </small>
+              </p>
+            </div>
+            <div class="row border border-dark border-top-0 py-1">
+              <p class="mb-0 col-12 text-capitalize">
+                <small
+                  >treatment under:
+                  <span class="text-gray" b
+                    ><b>Dr. capt. hosne ara (rtd)</b></span
+                  ></small
+                >
+              </p>
+            </div>
+            <div class="row border border-dark border-top-0 py-1">
+              <p class="mb-0 col-12 text-capitalize">
+                <small>duty doctor's: <span></span></small>
+              </p>
+            </div>
+            <!-- ||Form Section right|| -->
+            <div class="row border border-dark border-top-0 pt-2 pb-5">
+              <p class="mb-0 col-12 text-capitalize text-gray pb-5">
+                <small><b>remarks:</b> <span></span></small>
+              </p>
+            </div>
+          </section>
         </div>
-        <!-- ||Heading Section End|| -->
-
-        <!-- Form Section Start -->
-        <section>
-            <div class="row border border-2 py-2">
-                <p class="mb-0 col-6 text-capitalize"><small>Name: <span class="fw-bold">Ibrahim</span></small></p>
-                <p class="mb-0 col-6 text-capitalize"><small>Admission: <span class="fw-bold">01-12-2022
-                            04:11PM</span></small></p>
-            </div>
-            <div class="row border border-2 border-top-0 py-2">
-                <p class="mb-0 col-6 text-capitalize"><small>Age/Sex: <span class="fw-bold">25 Y/M</span></small></p>
-                <p class="mb-0 col-6 text-capitalize"><small>Discharged data: <span class="fw-bold">00</span>
-                    </small></p>
-            </div>
-            <div class="row border border-2 border-top-0 py-2">
-                <p class="mb-0 col-6 text-capitalize"><small>patient's cell: <span
-                            class="fw-bold">01844-004914</span></small></p>
-                <p class="mb-0 col-6 text-capitalize"><small>profession: <span class="fw-bold">service (govt)</span>
-                    </small></p>
-            </div>
-            <div class="row border border-2 border-top-0 py-2">
-                <p class="mb-0 col-12 text-capitalize"><small>address: <span class="fw-bold">ward no-39,
-                            haydarabad,pubail,
-                            gazipur sadar, joydebpur, gazipur.</span></small></p>
-            </div>
-            <div class="row border border-2 border-top-0 py-2">
-                <p class="mb-0 col-6 text-capitalize"><small>bad/cabin: <span class="fw-bold text-danger">cabin
-                            404</span></small></p>
-                <p class="mb-0 col-6 text-capitalize"><small>case/ disease: <span class="fw-bold">Appendicitis</span>
-                    </small></p>
-            </div>
-            <div class="row border border-2 border-top-0 py-2">
-                <p class="mb-0 col-12 text-capitalize"><small>treatment under: <span class="fw-bold">dr. capt. hosne ara
-                            (rtd)</span></small></p>
-            </div>
-            <div class="row border border-2 border-top-0 py-2">
-                <p class="mb-0 col-12 text-capitalize"><small>duty doctor's: <span class="fw-bold"></span></small></p>
-            </div>
-            <div class="row border border-2 border-top-0 pt-2 pb-5">
-                <p class="mb-0 col-12 text-capitalize pb-5"><small>remarks: <span class="fw-bold"></span></small></p>
-            </div>
-        </section>
-        <!-- ||Form Section End|| -->
-
-        <!-- Footer Section Start -->
-        <h2 class="text-success fw-bold fs-5 py-2">নির্দেশনা সমূহ:</h2>
+      </div>
+      <!-- Signature area -->
+      <div class="px-4">
+        <p class="text-success m-0 fw-bold py-2">নির্দেশনা সমূহ:</p>
         <ul>
-            <li><small>রোগী ভর্তির যেকোন সময় হতে পরবর্তী দিন দুপুর ১২ টা পর্যন্ত ১ দিন সমান গননা করা হবে।</small></li>
-            <li class="py-2"><small>ভর্তি রোগীর মূল্যবান জিনিস পত্র, যেমন: মোবাইল, ঘড়ি, টাকা, অলংকার, ইত্যাদি নিজ
-                    দায়িত্ব এ
-                    রাখতে হবে, চুরি গেলে কর্তিপক্ষ দায়ী থাকবে না।</small></li>
-            <li><small>যেকোন লেনদেন রশিদ ছাড়া গ্রহনযোগ্য নয়।</small></li>
+          <li>
+            <small
+              ><p class="m-0">
+                রোগী ভর্তির যেকোন সময় হতে পরবর্তী দিন দুপুর ১২ টা পর্যন্ত ১ দিন
+                সমান গননা করা হবে।
+              </p></small
+            >
+          </li>
+          <li class="py-2">
+            <small
+              ><p class="m-0">
+                ভর্তি রোগীর মূল্যবান জিনিস পত্র, যেমন: মোবাইল, ঘড়ি, টাকা,
+                অলংকার, ইত্যাদি নিজ দায়িত্ব এ রাখতে হবে, চুরি গেলে কর্তিপক্ষ
+                দায়ী থাকবে না।
+              </p></small
+            >
+          </li>
+          <li>
+            <small
+              ><p class="m-0">যেকোন লেনদেন রশিদ ছাড়া গ্রহনযোগ্য নয়।</p></small
+            >
+          </li>
         </ul>
-        <!-- ||Footer Section End|| -->
-    </div>
-</body>
 
+        <div class="row mb-3 mt-5">
+          <div class="col-6">
+            <span class="border-top border-dark"
+              ><small><b>Signature On Behalf</b></small></span
+            >
+          </div>
+          <div class="col-6"></div>
+        </div>
+        <div class="row text-gray text-center border-top border-bottom">
+          <div class="col-12">
+            <p class="m-0 text-center">
+              <small>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</small
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
